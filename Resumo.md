@@ -1,4 +1,3 @@
-Here is your text formatted as a clean **`git.md`** (Markdown) file:
 
 ```md
 # Understanding Apache Calcite
