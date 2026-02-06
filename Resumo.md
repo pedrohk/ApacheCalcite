@@ -30,3 +30,14 @@ It was created to provide a **“universal”** way to query diverse data source
 - **High-Performance Specialized NoSQL**  
   If you need to use features unique to a specific NoSQL API that SQL cannot represent easily.
 ```
+
+## Comparison with Competitors
+
+Calcite is often compared to other distributed query engines or query compilers:
+
+| Tool           | Primary Focus                        | Key Difference                                                                 |
+|----------------|--------------------------------------|--------------------------------------------------------------------------------|
+| **Presto/Trino** | Distributed query execution         | They are full execution engines; Calcite is only the **“brain”** (the optimizer). |
+| **Apache Spark** | Large-scale data processing          | Spark is a complete ecosystem; Spark SQL uses similar techniques, but Calcite is more pluggable for other projects. |
+| **Apache Drill** | SQL queries over schema-free data     | Drill actually **uses Calcite internally** for query optimization. |
+
