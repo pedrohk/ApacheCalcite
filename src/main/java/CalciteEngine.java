@@ -14,6 +14,7 @@ public class CalciteEngine {
     public void runQuery() throws SQLException {
         Properties info = new Properties();
         info.setProperty("lex", "JAVA");
+        info.setProperty("caseSensitive", "false");
 
         try (Connection connection = DriverManager.getConnection("jdbc:calcite:", info)) {
             CalciteConnection calciteConnection = connection.unwrap(CalciteConnection.class);
