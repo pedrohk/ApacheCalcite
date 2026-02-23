@@ -1,0 +1,4 @@
+id:int,userId:int,product:string,amount:double
+1,1,'MacBook',2500.0
+2,2,'iPhone',1000.0
+3,3,'Mouse',50.0

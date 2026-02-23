@@ -6,5 +6,6 @@ class CalciteEngineTest {
     void testSqlExecution() {
         CalciteEngine engine = new CalciteEngine();
         assertDoesNotThrow(() -> engine.runQuery());
+
     }
 }

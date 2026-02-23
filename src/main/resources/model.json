@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "defaultSchema": "MEMORY",
+  "schemas": [
+    {
+      "name": "MEMORY",
+      "type": "custom",
+      "factory": "org.apache.calcite.adapter.java.ReflectiveSchema$Factory",
+      "operand": {
+        "class": "Schema.HrSchema"
+      }
+    },
+    {
+      "name": "FILES",
+      "type": "custom",
+      "factory": "org.apache.calcite.adapter.file.FileSchemaFactory",
+      "operand": {
+        "directory": "data"
+      }
+    }
+  ]
+}
